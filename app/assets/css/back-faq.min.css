@@ -1,0 +1,314 @@
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.btn-link-color {
+  background-color: #00a1de;
+  color: #fff;
+}
+.btn-brand-sub {
+  background-color: #92d400;
+  color: #fff;
+}
+.tag-box span {
+  background-color: #555;
+  color: #fff;
+  margin: 0 10px;
+  padding: 5px;
+}
+.line {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+header {
+  background-color: #002478;
+}
+header .container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+header .container h3 {
+  color: #fff;
+  margin: auto auto auto 10px;
+}
+header .container .user-box {
+  color: #fff;
+  margin: auto 10px auto auto;
+}
+nav {
+  background-color: #00A1DE;
+}
+nav .container ul {
+  list-style: none;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  padding: 15px 0;
+}
+nav .container ul li {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  position: relative;
+  margin-right: 50px;
+}
+nav .container ul li a {
+  margin: auto;
+  color: #fff;
+}
+nav .container ul li .icon-alert {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+}
+nav .container ul li .icon-alert-info {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: red;
+  text-align: center;
+  color: #fff;
+  margin-left: 10px;
+}
+nav .container ul li.active a {
+  color: #92d400;
+}
+.main {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.main aside {
+  width: 200px;
+  margin-right: 5%;
+}
+.main aside .nav-tabs {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 2px 0;
+}
+.main aside .nav-tabs li {
+  float: none;
+}
+.main aside .nav-tabs li.active a {
+  border: none;
+}
+.main .right-side {
+  width: 900px;
+}
+.tab-content {
+  width: 75%;
+}
+.tab-content .tab-pane .content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  min-height: 600px;
+}
+.tab-content .tab-pane .header {
+  background-color: #002478;
+  width: 100%;
+  color: #fff;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.tab-content .tab-pane .header p {
+  margin: 0;
+}
+.tab-content .tab-pane .header span {
+  color: #92d400;
+}
+.tab-content table {
+  width: 100%;
+}
+.tab-content table thead tr th {
+  padding: 5px 10px;
+  text-align: left;
+}
+.tab-content table tbody tr td {
+  padding: 5px 10px;
+  text-align: left;
+}
+.tab-content table tbody tr:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+.tab-content .pagination {
+  margin: auto auto 10px auto;
+}
+.tab-content .pagination a {
+  border: 0;
+}
+.tab-content {
+  width: 100%;
+}
+.filter-box {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.filter-box .filter-line {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.filter-box .filter-line label {
+  margin: auto 0;
+}
+.filter-box .filter-line ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+.filter-box .filter-line ul li {
+  float: left;
+  margin: 0 10px;
+  padding: 0 10px;
+}
+.filter-box .filter-line ul .selected {
+  background-color: #92d400;
+  color: #fff;
+}
+.faq-lists {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.faq-lists .faq-list:first-child {
+  border: 0;
+}
+.faq-lists .faq-list {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  border-top: 1px dashed #002478;
+  padding: 5px 0;
+}
+.faq-lists .faq-list h4 {
+  color: #002478;
+  font-size: 14px;
+}
+.faq-lists .faq-list h4 input[type="checkbox"] {
+  margin-right: 10px;
+}
+.faq-lists .faq-list .faq-info {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.faq-lists .faq-list .faq-info h4 {
+  line-height: 21px;
+}
+.faq-lists .faq-list .faq-info h4 .tag {
+  background-color: #555;
+  color: #fff;
+  margin: 0 10px;
+  padding: 2px 5px;
+  font-size: 12px;
+}
+.faq-lists .faq-list .faq-info h4 .date {
+  color: gray;
+}
+.faq-lists .faq-list .faq-info-all {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.faq-lists .faq-list .action-box .btn {
+  margin: 5px;
+  padding: 2px 5px;
+}
+.pagination {
+  margin-top: 40px!important;
+}
+.modal .info-row {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.modal textarea {
+  height: 100px;
+}
+.modal .table-assign {
+  width: 100%;
+  border: 1px solid #92d400;
+}
+.modal .table-assign thead {
+  background-color: #002478;
+  color: #fff;
+}
+.modal .table-assign thead th {
+  border: 1px solid #92d400;
+  text-align: center;
+}
+.modal .table-assign tbody {
+  border: 1px solid #92d400;
+}
+.modal .table-assign tbody tr td:nth-child(1) {
+  background-color: #002478;
+  color: #fff;
+  text-align: center;
+}
+.modal .table-assign tbody tr td {
+  border: 1px solid #92d400;
+  padding-left: 10px;
+}
+.modal .table-assign tbody tr td a {
+  display: block;
+}
+.modal .table-assign tbody tr td input[type="radio"] {
+  float: left;
+  margin-right: 10px;
+}
+.modal .list-assign {
+  width: 100%;
+  border: 1px solid #ececec;
+}
+.modal .list-assign tr {
+  border: 1px solid #efefef;
+}
+.modal .list-assign tr td:first-child {
+  width: 100px;
+}
+.modal .list-assign tr td:first-child input {
+  display: block;
+  margin: 0 auto;
+}

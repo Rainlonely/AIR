@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>后台管理-报名管理</title>
+    <link rel="stylesheet" type="text/css" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/back-faq.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h3>空中宣讲会管理系统</h3>
+            <div class="user-box">
+                <figure></figure>
+                <span>USER NAME</span>
+                <a href="" title="">登出</a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li class="active"><a href="" title="">问题管理</a><i class="icon-alert"></i></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main container">
+        <aside>
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#list-wait" aria-controls="list-wait" role="tab" data-toggle="tab">待分配（12）</a></li>
+                <li role="presentation"><a href="#list-done" aria-controls="list-done" role="tab" data-toggle="tab">已分配</a></li>
+                <li role="presentation"><a href="#list-trash" aria-controls="list-trash" role="tab" data-toggle="tab">回收站</a></li>
+            </ul>
+        </aside>
+        <div class="right-side">
+            <div class="filter-box">
+                <div class="filter-line">
+                    <label>地区：</label>
+                    <ul class="filter-distract">
+                        <li>华东</li>
+                        <li>华北</li>
+                        <li class="selected">华南</li>
+                        <li>香港</li>
+                    </ul>
+                </div>
+                <div class="filter-line">
+                    <label>职位：</label>
+                    <ul class="filter-categary">
+                        <li>全部</li>
+                        <li>网申请</li>
+                        <li>招聘流程</li>
+                        <li>其他</li>
+                    </ul>
+                </div>
+                <div class="filter-line">
+                    <label>状态：</label>
+                    <ul class="filter-status">
+                        <li>全部</li>
+                        <li>已回答</li>
+                        <li>未回答</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="list-wait">
+                    <div class="action-box">
+                        <label><input type="checkbox">全选</label>
+                        <button class="btn btn-link-color" data-toggle="modal" data-target="#assgin-list">分配</button>
+                        <button class="btn btn-gray">删除</button>
+                    </div>
+                    <ul class="faq-lists">
+                        <li class="faq-list">
+                            <div class="faq-info">
+                                <h4><input type="checkbox">贝塔斯曼成都预计会招多少学生？</h4>
+                                
+                                    <div class="tag-box">
+                                        <span>西部</span><span>其他</span>
+                                    </div>
+                            </div>
+                            <div class="action-box">
+                                <button class="btn btn-link-color" type="button" data-toggle="modal" data-target="#assgin-box">分配 <i>*</i></button>
+                                
+                            </div>
+                        </li>
+                        <li class="faq-list">
+                            <div class="faq-info">
+                                <h4><input type="checkbox">贝塔斯曼成都预计会招多少学生？</h4>
+                                    <div class="tag-box">
+                                        <span>西部</span><span>其他</span>
+                                    </div>
+                            </div>
+                            <div class="action-box">
+                                <button class="btn btn-link-color">分配 <i>*</i></button>
+                            </div>
+                        </li>
+                        <li class="faq-list">
+                            <div class="faq-info">
+                                <h4><input type="checkbox">贝塔斯曼成都预计会招多少学生？</h4>
+                                    <div class="tag-box">
+                                        <span>西部</span><span>其他</span>
+                                    </div>
+                            </div>
+                            <div class="action-box">
+                                <button class="btn btn-link-color">分配 <i>*</i></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="list-done">
+                    <ul class="faq-lists">
+                        <li class="faq-list" data-toggle="collapse" data-parent="#J_normal_faq" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            <div class="faq-info col-xs-9">
+                                <h4>Jaimie,您好！我想请问一下，财务咨询在招聘员工时主要看重什么能力呢？如果没有相关的咨询实习经验会不会机会比较小？咨询真的像坊间传闻一样非常难进么？非常感谢您抽空解答我的疑惑！<span class="tag">tag1</span><span class="tag">tag2</span>
+                                <span style="margin-right: 5px" class="date">18 天前</span>
+                                </h4>
+                                
+                            </div>
+                            <div class="action-box col-xs-3 text-right">
+                                <span class="btn btn-brand-sub">已分配给$嘉宾Name$</span>
+                                <button class="btn btn-link-color">重新分配</button>
+                                <button class="btn btn-warning">未解答</button>
+                            </div>
+                        </li>
+                        <li class="faq-list">
+                            <div class="faq-info col-xs-9">
+                                <h4>贝塔斯曼成都预计会招多少学生？<span class="tag">西部</span><span class="tag">其他</span><span class="date">3分钟前</span></h4>
+                            </div>
+                            <div class="action-box col-xs-3 text-right">
+                                <span class="btn btn-brand-sub">已分配给$嘉宾Name$</span>
+                                <button class="btn btn-link-color">重新分配</button>
+                                <button class="btn btn-warning">未解答</button>
+                            </div>
+                        </li>
+                        <li class="faq-list collapsed" data-toggle="collapse" data-parent="#J_normal_faq" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                            <div class="faq-info col-xs-9">
+                                <h4>我是2015年毕业的，是否可以参加贵公司的申请？
+                                    <span class="tag">西北</span><span class="tag">XXX</span>
+                                    <span style="margin-right: 5px" class="date">21 天前</span>
+                                </h4>
+                            </div>
+                            <div class="action-box col-xs-3 text-right">
+                                <button class="btn btn-brand-sub set-top no-top-show" data-id="f51a5654-fd71-4c8c-843b-c85d61234f8e">置顶</button>
+                                <button class="btn btn-brand-sub">已解答</button>
+                            </div>
+                        </li>
+                        <li id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10" aria-expanded="true">
+                            <div class="panel-body row well">
+                                <figure class="avatar" style="background-image: url(/Images/teacher/avatar_deloitte.png);"></figure>
+                                <div class="answer-box">
+                                    <span>Jessie Wei，贝塔斯曼HR</span>
+                                    <span>解答了本问题</span>
+                                    <p>no you cannot</p>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <ul class="pagination pull-right">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span class="fa fa-angle-left "></span>
+                            </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span class="fa fa-angle-right"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="list-trash"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="assgin-box" tabindex="-1" role="dialog" aria-labelledby="assgin-box">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">贝塔斯曼成都预计会招多少学生？</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table-assign">
+                        <caption>将此问题分配给谁：</caption>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>上海</th>
+                                <th>北京</th>
+                                <th>广州/深圳</th>
+                                <th>重庆</th>
+                                <th>香港</th>
+                                <th>国际</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Audit</td>
+                                <td>
+                                    <a href="" title="">Grant  Pan</a>
+                                    <a href="" title="">Vincent Zhao</a>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Tax</td>
+                                <td></td>
+                                <td></td>
+                                <td><input type="radio"> <a href="" title="">PAN qiao sun</a>
+                                    <input type="radio"> <a href="" title="">WANG hai nan</a></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Con</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><input type="radio"> <a href="" title="">PAN qiao sun</a>
+                                    <input type="radio"> <a href="" title="">WANG hai nan</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>FAS</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><input type="radio"> <a href="" title="">PAN qiao sun</a>
+                                    <input type="radio"> <a href="" title="">WANG hai nan</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ERS</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><input type="radio"> <a href="" title="">PAN qiao sun</a>
+                                    <input type="radio"> <a href="" title="">WANG hai nan</a></td>
+                            </tr>
+                            <tr>
+                                <td>HR</td>
+                                <td></td>
+                                <td>
+                                    <input type="radio"> <a href="" title="">Zoe Hou</a>
+                                    <input type="radio"> <a href="" title="">Tony Xiang</a>
+                                    <input type="radio"> <a href="" title="">Tracy Xia</a>
+                                    <input type="radio"> <a href="" title="">Sariya Cao</a>
+                                    <input type="radio"> <a href="" title="">LIU Lun</a>
+                                    <input type="radio"> <a href="" title="">Juliet Xu</a>
+                                    <input type="radio"> <a href="" title="">Fiona Zhang</a>
+                                    <input type="radio"> <a href="" title="">PAN qiao sun</a>
+                                    <input type="radio"> <a href="" title="">WANG hai nan</a>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">发布</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal -->
+    <div class="modal fade" id="assgin-list" tabindex="-1" role="dialog" aria-labelledby="assgin-box">
+     <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">贝塔斯曼成都预计会招多少学生？</h4>
+                </div>
+                <div class="modal-body">
+                <table class="list-assign">
+                        <caption>将此问题分配给谁：</caption>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>姓名</th>
+                                <th>昵称</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="radio"></td>
+                                <td> XXX</td>
+                                <td>XX</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio"></td>
+                                <td> XXX</td>
+                                <td>XX</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio"></td>
+                                <td> XXX</td>
+                                <td>XX</td>
+                            </tr>
+                        </tbody>
+                </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../resources/js/jquery.min.js"></script>
+    <script src="../resources/js/bootstrap.min.js"></script>
+</body>
+
+</html>
