@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<!--
+	Aerial 1.0 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Aerial by HTML5 UP</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+			<link rel="stylesheet" href="css/style-noscript.css" />
+			
+		</noscript>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+				<!-- Header -->
+					<header id="header">
+						<h1>报名成功</h1>
+						<p>BAI所投企业 2016 联合校招</p>
+						<p>距宣讲会开始还有：XX天XX小时XX分钟XX秒</p>
+						<!-- <a href="http://workatdeloitte.com?hmsr=Careerfrog&hmmd=&hmpl=&hmkw=&hmci=" title="" style="border: 1px solid #fff; padding: 5px 20px; margin-top:40px; display: inline-block;">网申通道</a> -->
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<!-- <span class="copyright" style="color: rgba(255,255,255,.5);">提前网申可获得笔试直通券及空中有约、约谈德勤大咖机会</span> -->
+					</footer>
+				
+			</div>
+		</div>
+		    <!-- Complete Info Modal -->
+		    <div class="modal fade" id="complateModal" tabindex="-1" role="dialog" aria-labelledby="complateModalLabel">
+		        <div class="modal-dialog" role="document">
+		            <div class="modal-content">
+		                <div class="modal-header text-center">
+		                    <h4 class="modal-title" id="testModalLabel">BAI 2016 空中宣讲会报名</h4>
+		                </div>
+		                <div class="modal-body">
+		                	<input	type="text" placeholder="输入你的姓名" >
+		                	<input type="text" name="phone" placeholder="输入您的手机号">
+		                    <select id="select-country">
+		                        <option value="86">中国(+86)</option>
+		                        <option value="1">美国(+1)</option>
+		                        <option value="1">加拿大(+1)</option>
+		                        <option value="44">英国(+44)</option>
+		                        <option value="61">澳大利亚(+61)</option>
+		                        <option value="49">德国(+49)</option>
+		                        <option value="33">法国(+33)</option>
+		                        <option value="81">日本(+81)</option>
+		                        <option value="852">香港(+852)</option>
+		                        <option value="65">新加坡(+65)</option>
+		                        <option value="886">台湾(+886)</option>
+		                        <option value="64">新西兰(+64)</option>
+		                        <option value="82">韩国(+82)</option>
+		                        <option value="353">爱尔兰(+353)</option>
+		                        <option value="31">荷兰(+31)</option>
+		                    </select>
+		                    <i class="fa fa-angle-down"></i>
+		                    <input  type="text" placeholder="邮箱" >
+		                    <input  type="text" placeholder="学校全称" >
+		                    <div class="selectdate form-control">
+		                        <label>毕业年份</label>
+		                        <select name="year" id="year">
+		                            <option>2014年</option>
+		                            <option>2015年</option>
+		                            <option>2016年</option>
+		                            <option>2017年</option>
+		                        </select>
+		                        <select name="month" id="month">
+		                            <option value="01">01月</option>
+		                            <option value="02">02月</option>
+		                            <option value="03">03月</option>
+		                            <option value="04">04月</option>
+		                            <option value="05">05月</option>
+		                            <option value="06">06月</option>
+		                            <option value="07">07月</option>
+		                            <option value="08">08月</option>
+		                            <option value="09">09月</option>
+		                            <option value="10">10月</option>
+		                            <option value="11">11月</option>
+		                            <option value="12">12月</option>
+		                        </select>
+		                    </div>
+		                    <input type="password" placeholder="密码" >
+		                    <p class="hint">该密码可用于登录「8点后」网站，获得1对1求职指导</p>
+		                    <button id="btn_reg" type="button" class="btn-blue">确定</button>
+		                </div>
+		                <div class="modal-footer">
+		                    <p>贝塔斯曼 & Careerfrog 联合承办</p>
+		                    <p>报名即表示您同意8点后<a href="http://www.8dianhou.com/doc/agreement">用户协议</a>及<a href="http://www.8dianhou.com/doc/privacy">隐私条款</a></p>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		    <!-- END Modal -->
+		 <script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.placeholder.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#complateModal').modal({
+					backdrop:false
+				});
+			   
+			   var support = (function(input) { 
+                    return function(attr) { return attr in input } 
+               })(document.createElement('input'))
+
+               if ( !(support('placeholder') ) ) {               
+                $('input[placeholder],textarea[placeholder]').placeholder({ 
+                     useNative: false,  
+                     hideOnFocus: true,  
+                     style: {  
+                          textShadow: 'none'  
+                     }  
+                }); 
+               } 
+
+               if ( !support('autofocus') ) { 
+                    $('input[autofocus]').focus() 
+               } 
+
+			});
+			
+		</script>
+	</body>
+</html>

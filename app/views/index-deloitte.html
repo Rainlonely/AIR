@@ -661,7 +661,7 @@
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <p>Powered by <a href="http://www.8dianhou.com" title="">8点后</a></p>
+                    <p>德勤 & <a href="http://www.careerfrog.com.cn" title="">CareerFrog </a>联合承办</p>
                     <p>登录即表示您同意8点后<a href="http://www.8dianhou.com/doc/agreement">用户协议</a>及<a href="http://www.8dianhou.com/doc/privacy">隐私条款</a></p>
                 </div>
             </div>
@@ -762,20 +762,36 @@
                             <option value="12">12月</option>
                         </select>
                     </div>
+                    
+                    <div class="selectmajor form-control">
+                        <label>选择专业</label>
+                        <select name="major">
+                            <option value="">IT</option>
+                            <option value="">理工科</option>
+                            <option value="">数学</option>
+                            <option value="">管理信息系统</option>
+                            <option value="">商科</option>
+                            <option value="">社科</option>
+                            <option value="">人文</option>
+                            <option value="">其他</option>
+                        </select>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
                     <input id="txt_reg_no" type="text" placeholder="网申号">
-                    <input type="password" placeholder="密码">
+                    <!-- <input type="password" placeholder="密码">
                     <p class="hint">该密码可用于登录「8点后」网站，获得1对1求职指导</p>
                     <a href="javascript:;" class="a-upload">选择文件 上传简历（5M内Word，pdf）
                         <input type="file" name="" id="">
                     </a>
                     <div class="a-upload">
                         <span>Resume.pdf</span> <i class="fa fa-check-circle-o pull-right"></i>
-                    </div>
+                    </div> 
                     <p class="hint">可后续通过点击顶部登录名补充</p>
+                    -->
                     <button id="btn_reg" type="button" class="btn-blue">确定</button>
                 </div>
                 <div class="modal-footer">
-                    <p>Powered by <a href="http://www.8dianhou.com" title="">8点后</a></p>
+                    <p>德勤 & <a href="http://www.careerfrog.com.cn" title="">CareerFrog </a>联合承办</p>
                     <p>登录即表示您同意8点后<a href="http://www.8dianhou.com/doc/agreement">用户协议</a>及<a href="http://www.8dianhou.com/doc/privacy">隐私条款</a></p>
                 </div>
             </div>
@@ -830,7 +846,7 @@
         </div>
     </div>
     <!-- END Modal -->
-    <!-- Update Info Modal -->
+    <!-- SelectTutor Modal -->
     <div class="modal fade in" id="selectTutorModal" tabindex="-1" role="dialog" aria-labelledby="complateModalLabel">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -1086,10 +1102,8 @@
         
         if($('#accordion li').length == 6){
             $('#accordion .toggle-show').hide();
-            console.log('hide');
         } else{
             $('#accordion .toggle-show').show();
-            console.log('block');
         }
 
         $('#selectTutorModal .tutor-card').on("click", function() {
