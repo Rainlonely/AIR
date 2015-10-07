@@ -386,25 +386,24 @@ nav {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                padding-top: 10px;
                 .topic-box {
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                    h5 {
-                        font-size: 16px;
-                        color: #00a1de;
-                    }
-                    .tag-box {
-                        margin-left: 50px;
-                        span {
-                            padding: 3px 10px;
-                            background-color: #eee;
-                            border-radius: 11px;
-                        }
+                    font-size: 14px;
+                    color: #00a1de;
+                    width: 90%;
+                    .tag {
+                        margin-left: 15px;
+                        padding: 3px 10px;
+                        background-color: #eee;
+                        border-radius: 11px;
+                        color: #333;
+                        font-size: 12px;
                     }
                 }
                 .ask-time {
                     color: #707070;
+                    font-size: 12px;
+                    width: 10%;
                 }
             }
         }
@@ -440,7 +439,14 @@ nav {
         }
     }
 }
-
+#tab-direct .list-box li{
+    flex-direction:row;
+    align-items: center;
+    padding: 10px 0;
+    justify-content: space-between;
+    .btn-blue{margin-top: 0;}
+}
+#tab-direct .list-box li:last-child{display: flex;}
 #accordion li:nth-child(n+6) {
     display: none;
 }
@@ -676,7 +682,7 @@ nav {
             }
             #select-country {
                 position: absolute;
-                top: 125px;
+                top: 77px;
                 border: 0;
                 background-color: transparent;
                 border-right: 1px solid #ececec;
@@ -687,7 +693,7 @@ nav {
             }
             .fa-angle-down {
                 position: absolute;
-                top: 138px;
+                top: 90px;
                 left: 169px;
             }
             .form-control {
