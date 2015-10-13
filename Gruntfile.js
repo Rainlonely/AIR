@@ -191,6 +191,12 @@ module.exports = function (grunt) {
                         cwd: 'bower_components/bootstrap/dist/js',
                         src: ['bootstrap.min.js'],
                         dest: '<%= web.dist %>/resources/js'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'bower_components/jquery-placeholder',
+                        src: ['jquery.placeholder.js'],
+                        dest: '<%= web.dist %>/resources/js'
                     }
 
                 ]

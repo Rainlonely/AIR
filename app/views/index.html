@@ -30,12 +30,13 @@
                 </ul>
             </div>
             
-            <a class="qr-link" href="http://www.epub360.com/manage/book/0jwcqr/">
+            <a class="qr-link mob-link" href="http://www.epub360.com/manage/book/0jwcqr/">
                 网申通道
-                <div class="qr-box">
+                <!-- <div class="qr-box">
                     <img src="../resources/images/qr.gif" alt="">
-                </div>
+                </div> -->
             </a>
+            <a class="desk-link" href="http://vip.yingjiesheng.com/2016/bai" title="网申通道">网申通道</a>
             <a href="http://www.careerfrog.com.cn" title="">关于CareerFrog</a>
             
         </div>
@@ -544,7 +545,7 @@
                     <p>
                         <b>你的网申号和学校信息很重要</b>，这是参加“笔试直通券”和“空中有约”的先决条件！同学们可点击右上角的“你的姓名”处补录或修改自己的网申信息。
                     </p>
-                    <ul>
+                    <ul style="margin:30px 0;">
                         <li>
                             <b>200张笔试直通券怎么抢？</b>在视频播放过程中，会有5道选择题依次出现在屏幕中间（每道题发放40张直通券），回答快且准的同学将收到屏幕弹窗提醒，获得笔试直通券一张，你将可以直接跳过网申筛选环节。请记住，必须要先网申，先网申，先网申。
                         </li>
@@ -915,19 +916,20 @@
     <!-- END Modal -->
     <script src="../resources/js/jquery.min.js"></script>
     <script src="../resources/js/bootstrap.min.js"></script>
+    <script src="../resources/js/jquery.placeholder.js"></script>
     <script>
     $(document).ready(function() {
-        //$('#hintModal').modal();
-        
+    //    $('#loginModal').modal();
+        $('input, textarea').placeholder();
         var ua = navigator.userAgent;
         var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
             isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
             isAndroid = ua.match(/(Android)\s+([\d.]+)/),
             isMobile = isIphone || isAndroid;
             if(!isMobile) {
-                $('.qr-link').attr('href','#');
+                $('.desk-link').css('display','block');
             } else{
-                $('.qr-box').remove();
+                $('.mob-link').css('display','block');
             }
 
         if($('#accordion li').length == 6){
