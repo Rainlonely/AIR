@@ -32,23 +32,20 @@
             
             <a class="qr-link mob-link" href="http://www.epub360.com/manage/book/0jwcqr/">
                 网申通道
-                <!-- <div class="qr-box">
-                    <img src="../resources/images/qr.gif" alt="">
-                </div> -->
             </a>
             <a class="desk-link" href="http://vip.yingjiesheng.com/2016/bai" title="网申通道">网申通道</a>
             <a href="http://www.careerfrog.com.cn" title="">关于CareerFrog</a>
             
         </div>
     </header>
-    <section class="banner-top container ba">
+    <!-- <section class="banner-top container ba">
         <h3>距宣讲会开始还有：<span>15天 02小时 33分 44秒</span></h3>
         <span>独家合作伙伴 CareerFrog</span>
-    </section>
-    <!-- <section id="J_video" class="video-box">
+    </section> -->
+    <section id="J_video" class="video-box">
         <div class="container">
             <div id="J_video_source" class="video">
-                <div id="mep_0" class="mejs-container mejs-video" style="width: 100%; height: 100%;">
+            <!--     <div id="mep_0" class="mejs-container mejs-video" style="width: 100%; height: 100%;">
                     <div class="mejs-inner">
                         <div class="mejs-mediaelement">
                             <video id="videoId" width="100%" height="100%" src="../resources/images/codeschool_1493.mp4">
@@ -58,7 +55,7 @@
                         <div class="mejs-controls" style="display: block; visibility: hidden;"></div>
                         <div class="mejs-clear"></div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div id="video_complate" style="display: none">
                 <img src="/Images/homepage_countdown.png">
@@ -67,25 +64,25 @@
                 <div class="fix-nav">
                     <h3>贝塔斯曼2015校园招聘空中宣讲会 </h3>
                     <ul>
-                        <li class="active"><a href="" title="">问答墙</a></li>
-                        <li><a href="" title="">公司介绍</a></li>
-                        <li><a href="" title="">笔试直通券</a></li>
+                        <li class="active"><a class="tab1" href="#tab-faq" aria-controls="tab-faq" role="tab" data-toggle="tab">问答墙</a></li>
+                        <li><a class="tab2" href="#tab-description" aria-controls="tab-description" role="tab" data-toggle="tab">公司介绍</a></li>
+                        <li><a class="tab3" href="#tab-direct" aria-controls="tab-direct" role="tab" data-toggle="tab">笔试直通券</a></li>
                     </ul>
                 </div>
                 <button class="btn-link-blue btn_show_ask_modal" data-toggle="modal" data-target="#selectTutorModal">我要提问</button>
             </div>
         </div>
-    </section> -->
+    </section>
     <nav class="container">
         <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active">
-                <a href="#tab-faq" aria-controls="tab-faq" role="tab" data-toggle="tab">问答墙</a>
+                <a class="tab1" href="#tab-faq" aria-controls="tab-faq" role="tab" data-toggle="tab">问答墙</a>
             </li>
             <li role="presentation">
-                <a href="#tab-description" aria-controls="tab-description" role="tab" data-toggle="tab">公司介绍</a>
+                <a class="tab2" href="#tab-description" aria-controls="tab-description" role="tab" data-toggle="tab">公司介绍</a>
             </li>
             <li role="presentation">
-                <a href="#tab-direct" aria-controls="tab-direct" role="tab" data-toggle="tab">笔试直通券</a>
+                <a class="tab3" href="#tab-direct" aria-controls="tab-direct" role="tab" data-toggle="tab">笔试直通券</a>
             </li>
         </ul>
         <button class="pull-right btn-blue" data-toggle="modal" data-target="#selectTutorModal">我要提问</button>
@@ -119,7 +116,7 @@
                 <header>常见问题</header>
                 <!-- /header -->
                 <ul class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <li class="question-name" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <li class="question-name" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <div class="line1">
                             <p class="topic-box">学校对成绩达到标准的同学有主辅互换政策，即我现在是非会计专业，辅修会计专业，主辅互换后主修专业为会计专业。但主辅互换资格大四下学期才能正式发布，所以现在成绩单等都是原专业，但以后毕业证书主修为会计专业。请问我在网申时应该如何填写专业？填会计，但提交原专业成绩单等会被认为不诚信吗？<span class="tag">招聘政策</span></p>
                             <span class="ask-time">王圆同学约1个月前提出</span>
@@ -173,14 +170,27 @@
                 <header>一般问题</header>
                 <!-- /header -->
                 <ul>
-                    <li>
+                    <li class="question-name" data-toggle="collapse" href="#collapse23" aria-expanded="true" aria-controls="collapse23">
                         <div class="line1">
-                            <p class="topic-box">德勤程度预计会招多少学生？
-                                <span class="tag">西部</span>
-                                <span class="tag">西部</span>
+                            <p class="topic-box">
+                                这次探探一共招多少人？
                             </p>
-                            <span class="ask-time">贺同学 3分钟前提出</span>
+                            <span class="ask-time">Elyn hu同学 约 4 小时前提出</span>
                         </div>
+                        
+                        <div class="line2">
+                            <div id="collapse23" class="panel-collapse collapse " role="tabpanel" aria-labelledby="heading23">
+                                <div class="panel-body row">
+                                    <figure class="avatar" style="background-image: url(/images/teacher/6.tantan.png);"></figure>
+                                    <div class="answer-box">
+                                        <span>qwerqw</span>
+                                        <span>解答了本问题</span>
+                                        <p>不告诉你</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </li>
                     <li>
                         <div class="line1">
@@ -467,10 +477,14 @@
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">登录</h4>
+                </div>
                 <div class="modal-body">
                     <input type="text" name="username" placeholder="输入您的姓名">
                     <div class="form-control">
-                        <select id="select-country">
+                        <select id="select-country" class="select-country">
                         <option value="86">中国(+86)</option>
                         <option value="1">美国(+1)</option>
                         <option value="1">加拿大(+1)</option>
@@ -492,13 +506,45 @@
                     </div>
                     <button type="button" class="btn-blue">确定</button>
                     <p>预报名用户请输入预报名时填写的信息</p>
-                    <p class="hint">
-                        登录遇到问题，可致电：400-642-0080或发送邮件至 natyan@deloitte.com.cn邮件请注明手机号和姓名
-                    </p>
+                    <a href="#resendModal" data-toggle="modal" title="">忘记登录名？</a>
                 </div>
                 <div class="modal-footer">
                     <p>贝塔斯曼 & <a href="http://www.8dianhou.com" title="">CareerFrog </a> 联合承办</p>
                     <p>登录即表示您同意8点后<a href="http://www.8dianhou.com/doc/agreement">用户协议</a>及<a href="http://www.8dianhou.com/doc/privacy">隐私条款</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="resendModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">找回登录名</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-control">
+                        <select id="select-country" class="select-country">
+                            <option value="86">中国(+86)</option>
+                            <option value="1">美国(+1)</option>
+                            <option value="1">加拿大(+1)</option>
+                            <option value="44">英国(+44)</option>
+                            <option value="61">澳大利亚(+61)</option>
+                            <option value="49">德国(+49)</option>
+                            <option value="33">法国(+33)</option>
+                            <option value="81">日本(+81)</option>
+                            <option value="852">香港(+852)</option>
+                            <option value="65">新加坡(+65)</option>
+                            <option value="886">台湾(+886)</option>
+                            <option value="64">新西兰(+64)</option>
+                            <option value="82">韩国(+82)</option>
+                            <option value="353">爱尔兰(+353)</option>
+                            <option value="31">荷兰(+31)</option>
+                        </select>
+                        <i class="fa fa-angle-down"></i>
+                        <input type="text" name="phone" placeholder="输入您的手机号">    
+                    </div>
+                    <button type="button" class="btn-blue" data-dismiss="modal">发送登录名至手机</button>
                 </div>
             </div>
         </div>
@@ -919,7 +965,7 @@
     <script src="../resources/js/jquery.placeholder.js"></script>
     <script>
     $(document).ready(function() {
-    //    $('#loginModal').modal();
+        $('#loginModal').modal();
         $('input, textarea').placeholder();
         var ua = navigator.userAgent;
         var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
@@ -957,7 +1003,16 @@
                 $(this).find('a').text('显示更多');
             }
         });
-
+        $('.fix-nav').find('a').on('click',function(){
+            var targetEle =  $(this).attr('class');
+            $('.nav-tabs').find('li').removeClass('active');
+            $('.nav-tabs').find('\.'+targetEle).closest('li').addClass('active');
+        });
+        $('.nav-tabs').find('a').on('click',function(){
+            var targetEle =  $(this).attr('class');
+           $('.fix-nav').find('li').removeClass('active');
+            $('.fix-nav').find('\.'+targetEle).closest('li').addClass('active'); 
+        });
         $(window).on('scroll', function(e) {
             var topValue = $(this).scrollTop();
             if (topValue > 687) {

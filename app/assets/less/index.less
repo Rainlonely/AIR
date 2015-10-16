@@ -265,8 +265,8 @@ nav {
         padding: 0;
         .video {
             width: 1000px;
-            height: 626px;
-            background-color: #000;
+            height: 600px;
+            //background-color: #000;
         }
         .right-side {
             display: none;
@@ -393,6 +393,7 @@ nav {
                     font-size: 14px;
                     color: #00a1de;
                     width: 90%;
+                    cursor: pointer;
                     .tag {
                         margin-left: 15px;
                         padding: 3px 10px;
@@ -408,6 +409,9 @@ nav {
                     width: 10%;
                 }
             }
+        }
+        li.question-name:hover{
+            background-color: #F9F9DF;
         }
         li.collapsed {
             border-bottom: 1px dashed #dfdfdf;
@@ -658,7 +662,8 @@ nav {
 
 #loginModal,
 #complateModal,
-#updateModal {
+#updateModal ,
+#resendModal{
     .modal-dialog {
         width: 450px;
     }
@@ -685,13 +690,12 @@ nav {
                 padding-left: 135px;
                 height: 40px;
             }
-            #select-country {
+            .select-country {
                 position: absolute;
                 top: 71px;
-                left: 80px;
                 border: 0;
                 background-color: transparent;
-                border-right: 1px solid #ececec;
+                border-right: 1px solid #ececec!important;
                 -webkit-appearance: none;
                 padding: 9px 0 9px 20px;
                 border-radius: 0;
@@ -727,11 +731,11 @@ nav {
                     border: 0;
                     margin-right: 20px;
                 }
-                #select-country{
+                .select-country{
                     top: 0;
                     padding: 9px 0;
                 }
-                #select-country + .fa-angle-down{
+                .select-country + .fa-angle-down{
                     left: 90px;
                 }
                 .fa-angle-down {
@@ -824,11 +828,12 @@ nav {
     }
 }
 
-#hintModal .modal-dialog {
-    width: 860px;
-}
+
 
 #hintModal {
+    .modal-dialog {
+        width: 860px;
+    }
     .modal-header {
         background-image: url(../images/hint-header.png);
         background-size: 100%;
